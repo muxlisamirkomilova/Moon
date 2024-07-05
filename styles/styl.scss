@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0a2a43;
+    min-height: 1500px;
+}
+section{
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        pointer-events: none;
+    }
+}
+#text{
+    position: relative;
+    color: #fff;
+    font-size: 11rem;
+}
+section::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient( to top,#0a2a43,transparent);
+    z-index: 500;
+}
+.moon2{
+img{
+    filter: drop-shadow(20px 10px 7px 20px #0a2a43);
+}
+}
+P{
+    color: #ffffff;
+    font-size: 2rem;
+
+    span{
+        color: #fff;
+        display: block;
+        font-size: 3rem;
+    }
+}
+.moon2{
+    p{
+        width: 100%;
+        float: left;
+    }
+    img{
+        width: 100%;
+        float: right;
+
+    }
+}
+#moon{
+    animation: moon 5s infinite linear;
+}
+@keyframes moon{
+    50%{
+        transform: rotateZ(10deg);
+    }
+    100%{
+        transform: rotateX(15deg);
+    }
+}
+#road{
+    animation: road 5s infinite linear;
+}
+@keyframes road{
+    50%{
+        transform: skew(10deg);
+    }
+}
+.one {
+    animation: boop1 2s ease-in 0.5s infinite alternate;
+    height: 100px;
+    background-color: #fff;
+    width: 0px;
+    overflow: hidden;
+    p{
+        color: rgb(245, 241, 19);
+    }
+}
+
+@keyframes boop1 {
+    from {
+        width: 0px;
+        background-color: rgb(98, 181, 233);
+    }
+    to{
+        width: 1440px;
+        background-color: rgb(11, 54, 148);
+    }
+}
+
+.two {
+    animation: boop2 2s ease-in 0.75s infinite alternate;
+    height: 600px;
+    background-color: rgb(14, 137, 208);
+    width: 0px;
+    overflow: hidden;
+    object-fit: cover;
+    p{
+    color: wheat;
+    }
+}
+
+@keyframes boop2 {
+    from {
+        width: 0px;
+        background-color: rgb(20, 109, 210);
+    }
+    to{
+        width: 1440px;
+        background-color: rgb(40, 178, 225);
+    }
+}
+
+.there {
+    animation: boop3 2s ease-in 1s infinite alternate;
+    height: 700px;
+    width: 1440px;
+    overflow: hidden;
+    object-fit: cover;
+   
+}
+@keyframes boop3 {
+    from {
+        width: 0px;
+        background-color: rgb(185, 204, 225);
+    }
+    to{
+        width: 1440px;
+        background-color: rgb(10, 151, 245);
+    }
+}
+.hero{
+    .imag{
+        display: flex;
+        flex: wrap;
+        float: right;
+        width: 50%;
+    }
+    h2{
+        margin: 0 auto;
+        font-weight: 1000;
+        font-size: 190px;
+        line-height: 100%;
+        text-transform: uppercase;
+    }
+    .ten{
+        float: right;
+        width: 32%;
+        font-size: 26px;
+    }
+    .img1{
+        float: left;
+        width: 68%;
+    }
+}
+
+.text-bg-image{
+    background-image: url("https://image.winudf.com/v2/image/Y29tLkNoaWVmV2FsbHBhcGVycy5CbHVlMjlfc2NyZWVuc2hvdHNfMl85OWEwOGMwOA/screen-2.jpg?fakeurl=1&type=.jpg");
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: animate-bg 30s ease infinite;
+}
+.image{
+    background-image: url("https://66.media.tumblr.com/41281654247d0c1b622467039c2cdb05/tumblr_ncmmky30z11rxgopvo1_500.gif");
+    -webkit-text-fill-color: transparent;
+    background-clip: content-box;
+    animation: animate-bg 30s ease infinite;
+}
+.images{
+    background-image: url("https://i.pinimg.com/originals/1a/33/ab/1a33ab0abdb651b19bdde7264ca23f1b.gif");
+    background-position: center center center;
+    background-size: cover cover;
+    background-repeat: no-repeat;
+}
+.hero p,img{
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+}
+@keyframes animate-bg{
+    0%{
+        background-position: center 25%;
+    }
+    50%{
+        background-position: center 50%;
+    }
+    100%{
+        background-position: center 25%;
+    }
+}
+.item2{
+    width: 1440px;
+    width: 650px;
+    margin: 15px;
+}
+.item{
+    background: repeating-radial-gradient(#111111,#124369,#ffffff 20%,#145282 15%);
+    width: 1400px;
+    height: 600px;
+    margin: 100px auto;
+    img{
+        margin: -130px -90px 30px 150px;
+        z-index: 11111;
+    }
+}

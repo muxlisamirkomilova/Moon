@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #dbdb11;
+}
+.flex{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 0;
+}
+    a{
+        text-decoration: none;
+        color: orange;
+        font-size:  2rem;
+    }
+.contanier {
+    transition: all 0.3s ease;
+    .flip-style{
+        width: 350px;
+        height: 250px;
+        cursor: pointer;
+        .box-style{
+            transform-style: preserve-3d;
+            backface-visibility: hidden;
+            position: absolute;
+            width: 100%;height: 100%;
+            -webkit-transition: all 0.6s ease-in-out;
+            -o-transition: all 0.6s ease-in-out;
+            transition: all 0.6s ease-in-out;
+            border-radius: 10px;
+        }
+    }
+}
+.flip-box{
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+     .box-front{
+        transform: none;
+        z-index: 1;
+        background-image: url('https://w.forfun.com/fetch/d7/d75467362eb0c86dc2f41b8401cdb63e.jpeg');
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .box-back{
+        width: calc(100% - 10px);
+        height: calc(100% - 10px);
+        transform: rotateX(0) rotateY(-180deg);
+        background: #fff;
+        border: 5px solid orange;
+    }
+}
+.flip-box:hover .box-front{
+    transform: rotateX(0) rotateY(180deg);
+}
+.flip-box:hover .box-back{
+    transform: none;
+    background-color: orange;
+}
+.box-cantent-wrapper{
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    text-align: center;
+    transform: translateZ(90px);
+}
+.box-front-1{
+    transform: none;
+    z-index: 1;
+    background-image: url('https://www.gelinlikvekadin.com/wp-content/uploads/2015/12/ye%C5%9Fil-Topuklu-Ayakkab%C4%B1-Modelleri-1-768x783.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1440px;
+    .categor {
+        color: #e6e6e6;
+        font-family: 'Montserrat', Semibold;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        margin: 68px 5px 100px 110px;
+    }
+    
+    .login {
+        display: flex;
+        padding: 8px 32px;
+        gap: 10px;
+        border-radius: 8px;
+        background: orange;
+        border: 1px solid var(--text-white, #FFF);
+        align-items: center;
+        cursor: pointer;
+    }
+    
+    .signup {
+        display: inline-flex;
+        padding: 8px 32px;
+        gap: 10px;
+        border-radius: 8px;
+        background: orange;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .home {
+        color: orange;
+        font-family: ' Montserrat', SemiBold;
+        display: inline-block;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+        margin-left: 50px;
+    }
+    .inpp {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 3px solid orange;
+        width: 443px;
+        height: 48px;
+        border-radius: 10px;
+        padding-right: 16px;
+        cursor: pointer;
+    }
+    
+    .inpp input {
+        margin-right: 16px;
+        height: 100%;
+        padding-left: 20px;
+        background: transparent;
+        outline: none;
+        color: orange;
+        flex: 1;
+        border: none;
+        border-radius: 10px;
+    }
+    
+    .inpp input::placeholder{
+        color: orange;
+        font-family: "Montserrat";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+    }
+     }
+     .send{
+        background-color: #dbdb11;
+     }
+     .item{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .png{
+            border-radius: 20px;
+            margin: 17px;
+        }
+     }
+     .vidio{
+        margin: 30px;
+     }
